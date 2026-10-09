@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Steve's Kitchen</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🍴 Steve's <b>Kitchen</b></a>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </header>
+
+  <main class="page-wrap">
+    <div class="page-intro">
+      <span class="eyebrow">GET IN TOUCH</span>
+      <h1>Contact Steve's Kitchen</h1>
+      <p>Have a question about our meals or your order? Send us a message.</p>
+    </div>
+
+    <div class="contact-layout">
+      <section class="contact-details">
+        <article class="contact-item">
+          <h3>Restaurant Address</h3>
+          <p>Replace with Steve's restaurant address, Kenya.</p>
+        </article>
+
+        <article class="contact-item">
+          <h3>Phone</h3>
+          <p>Replace with the restaurant phone number.</p>
+        </article>
+
+        <article class="contact-item">
+          <h3>Opening Hours</h3>
+          <p>Replace with the actual opening hours.</p>
+          <p>Evening pickup slots available.</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Send Us a Message</h2>
+        <form onsubmit="contactSubmit(event)">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" required placeholder="Your name">
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email"
+                 required placeholder="you@example.com">
+
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option>General enquiry</option>
+            <option>Question about an order</option>
+            <option>Booking enquiry</option>
+            <option>Feedback</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"
+                    required placeholder="Write your message"></textarea>
+
+          <button class="btn btn-primary full-width" type="submit">
+            Send Message →
+          </button>
+
+          <div id="contact-message" class="notice" role="status" hidden></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer><p>© <span id="year"></span> Steve's Kitchen</p></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

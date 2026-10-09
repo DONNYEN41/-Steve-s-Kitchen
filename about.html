@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Steve's Kitchen</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🍴 Steve's <b>Kitchen</b></a>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </header>
+
+  <main class="page-wrap">
+    <section class="about-hero">
+      <div>
+        <span class="eyebrow">OUR STORY</span>
+        <h1>Good food brings<br><em>us together.</em></h1>
+        <p>
+          Steve's Kitchen is committed to serving delicious meals
+          in a friendly and welcoming environment.
+        </p>
+        <p>
+          Our online ordering service allows customers to select meals
+          and pickup times in advance, helping reduce queues during
+          busy evening hours.
+        </p>
+        <a class="btn btn-primary" href="menu.html">Explore Our Menu →</a>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85"
+        alt="Customers enjoying a restaurant meal">
+    </section>
+
+    <section class="values-grid">
+      <article>
+        <h3>Fresh Food</h3>
+        <p>We aim to serve satisfying meals prepared with care.</p>
+      </article>
+      <article>
+        <h3>Friendly Service</h3>
+        <p>We want every customer to enjoy a welcoming experience.</p>
+      </article>
+      <article>
+        <h3>Convenience</h3>
+        <p>Online ordering and planned pickup times help save time.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Steve's Kitchen</p></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

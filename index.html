@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve's Kitchen | Home</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🍴 Steve's <b>Kitchen</b></a>
+    <nav id="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">GOOD FOOD. GREAT MOMENTS.</span>
+        <h1>Your cravings,<br><em>served fresh.</em></h1>
+        <p>Enjoy delicious meals, friendly service and convenient online ordering.</p>
+        <a class="btn btn-primary" href="menu.html">Explore Our Menu</a>
+        <a class="btn btn-outline" href="order.html">Order for Pickup</a>
+        <p>Skip the evening queue by ordering ahead!</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85"
+             alt="Restaurant dining area">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Our Popular Meals</h2>
+        <a class="text-link" href="menu.html">View Full Menu →</a>
+      </div>
+      <div class="food-grid">
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+               alt="Beef burger">
+          <div class="food-info">
+            <h3>Classic Beef Burger</h3>
+            <strong>KSh 650</strong>
+          </div>
+          <button class="add-btn" onclick="addToCart('Classic Beef Burger',650)">
+            Add to Order
+          </button>
+        </article>
+
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80"
+               alt="Fresh salad bowl">
+          <div class="food-info">
+            <h3>Garden Fresh Bowl</h3>
+            <strong>KSh 480</strong>
+          </div>
+          <button class="add-btn" onclick="addToCart('Garden Fresh Bowl',480)">
+            Add to Order
+          </button>
+        </article>
+
+        <article class="food-card">
+          <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=80"
+               alt="Chicken meal">
+          <div class="food-info">
+            <h3>Grilled Chicken Plate</h3>
+            <strong>KSh 850</strong>
+          </div>
+          <button class="add-btn" onclick="addToCart('Grilled Chicken Plate',850)">
+            Add to Order
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="pickup-banner">
+      <h2>Beat the dinner rush!</h2>
+      <p>Order online and select a convenient pickup time.</p>
+      <a class="btn btn-primary" href="order.html">Order Now →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Steve's Kitchen. Fresh food, friendly service.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

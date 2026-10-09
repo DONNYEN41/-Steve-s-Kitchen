@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Steve's Kitchen</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🍴 Steve's <b>Kitchen</b></a>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </header>
+
+  <main class="page-wrap">
+    <div class="page-intro">
+      <span class="eyebrow">MADE FRESH TO ORDER</span>
+      <h1>Our Delicious Menu</h1>
+      <p>Choose your favourite meals and add them to your order.</p>
+    </div>
+
+    <div class="menu-grid">
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Beef burger">
+        <div class="food-info"><h3>Classic Beef Burger</h3><strong>KSh 650</strong></div>
+        <p>Beef patty, lettuce, tomato and house sauce.</p>
+        <button class="add-btn" onclick="addToCart('Classic Beef Burger',650)">Add to Order</button>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=80" alt="Grilled chicken">
+        <div class="food-info"><h3>Grilled Chicken Plate</h3><strong>KSh 850</strong></div>
+        <p>Herb-marinated chicken served with sides.</p>
+        <button class="add-btn" onclick="addToCart('Grilled Chicken Plate',850)">Add to Order</button>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Fresh salad">
+        <div class="food-info"><h3>Garden Fresh Bowl</h3><strong>KSh 480</strong></div>
+        <p>Fresh greens, avocado and house dressing.</p>
+        <button class="add-btn" onclick="addToCart('Garden Fresh Bowl',480)">Add to Order</button>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza">
+        <div class="food-info"><h3>Loaded Pizza</h3><strong>KSh 950</strong></div>
+        <p>Cheese, peppers, olives and tomato.</p>
+        <button class="add-btn" onclick="addToCart('Loaded Pizza',950)">Add to Order</button>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Crispy fries">
+        <div class="food-info"><h3>Crispy Fries</h3><strong>KSh 250</strong></div>
+        <p>Golden fries with seasoning.</p>
+        <button class="add-btn" onclick="addToCart('Crispy Fries',250)">Add to Order</button>
+      </article>
+
+      <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80" alt="Cold drink">
+        <div class="food-info"><h3>Fresh Cooler</h3><strong>KSh 180</strong></div>
+        <p>A refreshing chilled drink.</p>
+        <button class="add-btn" onclick="addToCart('Fresh Cooler',180)">Add to Order</button>
+      </article>
+    </div>
+
+    <div class="center-action">
+      <a class="btn btn-primary" href="order.html">Review My Order →</a>
+    </div>
+  </main>
+
+  <footer><p>© <span id="year"></span> Steve's Kitchen</p></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
